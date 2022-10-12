@@ -7,14 +7,14 @@
     "axios": "^1.1.2",
     "classnames": "^2.2.6",
     "normalize.css": "^8.0.1",
-    "react": "^16.9.0",
+    "react": "^16.14.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.4.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!@codemirror)/'",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public --ci",
     "build-storybook": "build-storybook -s public"
@@ -39,8 +39,10 @@
     "@storybook/addons": "^5.0.10",
     "@storybook/react": "^5.0.10",
     "@testing-library/jest-dom": "^4.0.0",
-    "@testing-library/react": "^8.0.7",
+    "@testing-library/react": "^8.0.9",
+    "@testing-library/react-hooks": "^8.0.1",
     "babel-loader": "^8.0.5",
+    "react-test-renderer": "^16.9.0",
     "sass": "^1.53.0"
   },
   "jest": {

@@ -14,14 +14,44 @@ export function getAppointmentsForDay(state, day) {
   return aptArray;
 };
 
-export function getInterview(state, interview) {
+export function getInterviewersForDay(state, day) {
+  const interviewersArray = [];
 
-  if (!interview) {
-    return null;
+  for (let d of state.days) {
+    if (d.name === day) {
+      for (let interviewer in state.interviewers) {
+        if (d.interviewers.includes(state.interviewers[interviewer].id)) {
+          interviewersArray.push(state.interviewers[interviewer]);
+        }
+      }
+    }
   }
 
-  return {
-    student: interview.student,
-    interviewer: state.interviewers[interview.interviewer]
-  }
+  return interviewersArray;
 };
+
+// export function getInterview(state, interview) {
+
+//   if (!interview) {
+//     return null;
+//   }
+
+//   return {
+//     student: interview.student,
+//     interviewer: state.interviewers[interview.interviewer]
+//   }
+// };
+
+export function getInterview(state, interview){
+  if (!interview) {
+    return null
+  }
+  const { interviewers } = state;
+  const { interviewer, student } = interview;
+  if (interviewers[interviewer]) {
+    return {
+      student: student,
+      interviewer: interviewers[interviewer]
+    }
+  }
+}

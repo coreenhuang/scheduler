@@ -30,28 +30,20 @@ export function getInterviewersForDay(state, day) {
   return interviewersArray;
 };
 
-// export function getInterview(state, interview) {
-
-//   if (!interview) {
-//     return null;
-//   }
-
-//   return {
-//     student: interview.student,
-//     interviewer: state.interviewers[interview.interviewer]
-//   }
-// };
-
 export function getInterview(state, interview){
+
   if (!interview) {
     return null
   }
+
   const { interviewers } = state;
+
   const { interviewer, student } = interview;
+
   if (interviewers[interviewer]) {
     return {
       student: student,
       interviewer: interviewers[interviewer]
     }
   }
-}
+};

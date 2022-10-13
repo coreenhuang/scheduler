@@ -33,10 +33,10 @@ npm run storybook
 
 Scheduler App
 
-![Scheduler](https://github.com/coreenhuang/scheduler/tree/master/docs/S1.png)
+![Scheduler](https://github.com/coreenhuang/scheduler/blob/master/docs/S1.png?raw=true)
 
-![Scheduler - Add](https://github.com/coreenhuang/scheduler/tree/master/docs/S2.png)
+![Scheduler - Add](https://github.com/coreenhuang/scheduler/blob/master/docs/S2.png?raw=true)
 
-![Scheduler - Added](https://github.com/coreenhuang/scheduler/tree/master/docs/S3.png)
+![Scheduler - Added](https://github.com/coreenhuang/scheduler/blob/master/docs/S3.png?raw=true)
 
-![Scheduler - Delete](https://github.com/coreenhuang/scheduler/tree/master/docs/S4.png)
+![Scheduler - Delete](https://github.com/coreenhuang/scheduler/blob/master/docs/S4.png?raw=true)
